@@ -13,7 +13,8 @@ import moment from 'moment';
 
 
 import Swal from 'sweetalert2'
-window.swal = swal;
+
+window.Swal = Swal;
 
 const Toast = Swal.mixin({
     toast: true,
@@ -26,11 +27,13 @@ const Toast = Swal.mixin({
         toast.addEventListener('mouseleave', Swal.resumeTimer)
     }
 })
+window.Toast = Toast;
 
-window.toast = toast;
+
 
 
 window.Form = Form;
+
 Vue.component(HasError.name, HasError)
 Vue.component(AlertError.name, AlertError)
 
