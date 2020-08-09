@@ -153,9 +153,9 @@
 
                 //notefiy
                 $('#addNew').modal('hide')
-                Toast.fire({
-                    icon: 'success',
-                    title: 'Signed in successfully'
+                toast({
+                    type: 'success',
+                    title: 'User Created  successfully'
                 })
 
                 this.$Progress.finish();
@@ -163,7 +163,6 @@
         },
         created() {
             this.loadUsers();
-
         }
     }
 </script>

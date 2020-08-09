@@ -2205,9 +2205,9 @@ __webpack_require__.r(__webpack_exports__);
       this.form.post('api/user'); //notefiy
 
       $('#addNew').modal('hide');
-      Toast.fire({
-        icon: 'success',
-        title: 'Signed in successfully'
+      toast({
+        type: 'success',
+        title: 'User Created  successfully'
       });
       this.$Progress.finish();
     }
@@ -80784,7 +80784,7 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
 
 
 
-window.Swal = sweetalert2__WEBPACK_IMPORTED_MODULE_2___default.a;
+window.swal = swal;
 var Toast = sweetalert2__WEBPACK_IMPORTED_MODULE_2___default.a.mixin({
   toast: true,
   position: 'top-end',
@@ -80796,7 +80796,7 @@ var Toast = sweetalert2__WEBPACK_IMPORTED_MODULE_2___default.a.mixin({
     toast.addEventListener('mouseleave', sweetalert2__WEBPACK_IMPORTED_MODULE_2___default.a.resumeTimer);
   }
 });
-window.Toast = Toast;
+window.toast = toast;
 window.Form = vform__WEBPACK_IMPORTED_MODULE_0__["Form"];
 Vue.component(vform__WEBPACK_IMPORTED_MODULE_0__["HasError"].name, vform__WEBPACK_IMPORTED_MODULE_0__["HasError"]);
 Vue.component(vform__WEBPACK_IMPORTED_MODULE_0__["AlertError"].name, vform__WEBPACK_IMPORTED_MODULE_0__["AlertError"]);
